@@ -1,6 +1,6 @@
 // This file implements a shunting-yard algorithm.
 // https://en.wikipedia.org/wiki/Shunting_yard_algorithm
-package main
+package rpn
 
 import (
 	"errors"

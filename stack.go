@@ -1,4 +1,4 @@
-package main
+package rpn
 
 type stack []string
 
