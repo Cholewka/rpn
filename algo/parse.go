@@ -100,11 +100,11 @@ func readToken(t string) error {
 			op := operatorStack.pop()
 			outputQueue = append(outputQueue, op)
 		}
-		if operatorStack.top() != "(" {
+		if len(operatorStack) == 0 || operatorStack.top() != "(" {
 			return errors.New("mismatched parenthesis")
 		}
 		operatorStack.pop() // discard the operator
-		if isfunction(operatorStack.top()) {
+		if len(operatorStack) > 0 && isfunction(operatorStack.top()) {
 			f := operatorStack.pop()
 			outputQueue = append(outputQueue, f)
 		}
