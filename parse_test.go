@@ -1,6 +1,4 @@
-// Algo is an implementation of the shunting yard algorithm.
-// https://en.wikipedia.org/wiki/Shunting_yard_algorithm
-package algo
+package main
 
 import "testing"
 
